@@ -3,7 +3,7 @@ node {
 
     def Yogesh_image = docker.build("ubuntu_docker")
 
-    ubuntu_docker.inside {
+    Yogesh_image.inside {
         sh 'ls -l'
     }
 }
