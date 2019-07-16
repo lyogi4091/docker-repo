@@ -5,3 +5,4 @@ RUN echo "hello"
 RUN echo "bye" && echo "bye-bye"
 RUN apt-get update && apt-get install gcc -y
 COPY file.c /opt/
+WORKDIR /opt
