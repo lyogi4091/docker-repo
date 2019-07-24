@@ -6,8 +6,11 @@ node {
             sh 'ls -l'
             sh 'gcc -o yogesh file.c'
             sh 'ls -l'
-	    sh './yogesh'
+            sh './yogesh'
             }
+    }
+    stage('Cleaning Workspace'){
+        cleanWs cleanWhenAborted: false, cleanWhenFailure: false
     }
     
 }
