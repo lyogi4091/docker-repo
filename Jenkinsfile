@@ -10,7 +10,7 @@ node {
             }
     }
     stage('Cleaning Workspace'){
-        cleanWs cleanWhenSuccess: false, cleanWhenUnstable: false
+        cleanWs cleanWhenSuccess: false
     }
     
 }
