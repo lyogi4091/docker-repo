@@ -8,9 +8,5 @@ node {
             sh 'ls -l'
             sh './yogesh'
             }
-    }
-    stage('Cleaning Workspace'){
-        cleanWs cleanWhenSuccess: false
-    }
-    
+    }   
 }
